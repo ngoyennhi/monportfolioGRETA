@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- style index.CSS -->
+    <link href="accueil.css" rel="stylesheet" />
+    <link href="reals.css" rel="stylesheet" />
+
+    <!-- Google font Lobster -- Confortaa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
+
+    <!-- font buton Go TOP  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <title>Mon Porfolio Yen Nhi HTM</title>
+
+</head>
+
+<body class="body">
+    <!--  header -->
+    <header class="header">
+        <div class="containerLogo"><img src="image/logoYENNHI.png" alt="logoYENNHI" class="logo"></div>
+        <div class="photoYN"><img src="image/photoYenNhi.png" alt="photoYenNhi" class="photo"></div>
+        <div class="nav" id="containerNav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-btn position-nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <a href="indexContact.html" id="btnContactIcon" class="nav-btn position-nav-btn-contactIcon"></a>
+
+            <div class="nav-links">
+                <a href="indexAccueil.html" class="btnOptions ">Accueil</a>
+                <a href="indexCV.html" class="btnOptions">CV</a>
+                <a href="indexRealisations.html" class="btnOptions isDisabled">Réalisations</a>
+                <a href="indexPublications.html" class="btnOptions">Publications</a>
+                <a href="indexContact.html" class="btnOptions">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!--  main -->
+    <main class="main color">
+        <div id="groupProduits">
+            <div id="icon_image1" class="zone1 color1 position-image1"></div>
+            <div id="produit_1" class="zone2 color2 position-produit2">
+                <div class="cardPhoto">
+                    <img src="image/lectureMP3.png" alt="photolactureMP3" class="cardPhoto-image">
+                </div>
+                <div class="contenuText">
+                   <h5>Projet MP3 Lecture: Connaissance en HTML/CSS/JS. Gestion
+                        des événements et manipulation du
+                        DOM.</h5>
+                </div>
+                <a href="https://hotongminh.needemand.com/mp3player/index.html#" target="_blank" class="custom-btn btn-7" ><span>Essayez-le!</span></a>
+            </div>
+            <div id="produit_2" class="zone3 color3 position-produit3">
+                <div class="cardPhoto">
+                    <img src="image/Bootstrap.png" alt="photoSTBoostrap" class="cardPhoto-image">
+                </div>
+                <div class="contenuText">
+                   <h5>Projet Star treck en Bootstrap: En intégrant Bootstrap, proposez une amélioration du site Star treck</h5>
+                </div>
+                <a href="https://hotongminh.needemand.com/TP_star_trek.html" target="_blank" class="custom-btn btn-7" ><span>Essayez-le!</span></a>
+            </div>
+            <div id="produit_3" class="zone4 color4 position-produit4">
+                <div class="cardPhoto">
+                    <img src="image/couture.png" alt="photoCouture" class="cardPhoto-image">
+                </div>
+                <div class="contenuText">
+                   <h5>Projet Couture: travail en binôme à Réaliser un site pour un club couture, pour que les participants puissent montrer leur réalisation.</h5>
+                </div>
+                <a href="https://hotongminh.needemand.com/sitecouture/index_accueil.html" target="_blank" class="custom-btn btn-7" ><span>Essayez-le!</span></a>
+            </div>
+            <div id="icon_image2" class="zone5 color5 position-image5"></div>
+        </div>
+        <div>
+        <div class="scenePageReal ">
+            <div class="carousel">
+                <div class="carousel__cell ">
+                    <div class="backgroundCarousel" id="carousel__cell1"></div>
+                </div>
+                <div class="carousel__cell">
+                    <div class="backgroundCarousel" id="carousel__cell2"></div>
+                </div>
+                <div class="carousel__cell">
+                    <div class="backgroundCarousel" id="carousel__cell3"></div>
+                </div>
+                <div class="carousel__cell">
+                    <div class="backgroundCarousel" id="carousel__cell4"></div>
+                </div>
+                <div class="carousel__cell">
+                    <div class="backgroundCarousel" id="carousel__cell5"></div>
+                </div>
+                <div class="carousel__cell">
+                    <div class="backgroundCarousel" id="carousel__cell6"></div>
+                </div>
+                <div class="carousel__cell">
+                    <div class="backgroundCarousel" id="carousel__cell7"></div>
+                </div>
+                <div class="carousel__cell">
+                    <div class="backgroundCarousel" id="carousel__cell8"></div>
+                </div>
+                <div class="carousel__cell">
+                    <div class="backgroundCarousel" id="carousel__cell9"></div>
+                </div>
+            </div>
+        </div>
+        <p style="text-align: center;">
+            <button class="previous-button custom-btn btn-10"></button>
+            <button class="next-button custom-btn btn-10"></button>
+        </p>
+        </div>
+        <!-- Back to top button + JS+ CSS-->
+        <div onclick="topFunction()" id="myBtn" title="Go to top"></div>
+        <!-- Back to top button -->
+    </main>
+    <!--  footer -->
+    <footer class="footer displayFlex">
+        <div id="zone1">
+        </div>
+        <div id="zone2">
+            <div id="containerLinks">
+                <span class="fontSizeTitle">Links</span>
+                <a href="indexAccueil.html" class="links">Accueil</a>
+                <a href="indexCV.html" class="links">CV</a>
+                <a href="indexRealisations.html" class="links">Réalisations</a>
+                <a href="indexPublications.html" class="links">Publications</a>
+                <a href="indexContact.html" class="links">Contact</a>
+            </div>
+            <div id="containerMonSite"></div>
+        </div>
+        <div id="zone3">
+            <div id="logoFooter"><img src="image/logoYENNHI.png" alt="logoYENNHI" class="logoFooter"></div>
+            <div id="containerIconFooter"></div>
+        </div>
+    </footer>
+    <!--  footer -->
+    <script src="mainAccueil.js"></script>
+    <script src="mainReal.js"></script>
+</body>
+
+</html>

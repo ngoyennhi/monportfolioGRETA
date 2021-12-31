@@ -1,0 +1,59 @@
+.mainVeille{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+}
+
+/* container contenu */
+#containerVeilles{
+    height: fit-content;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.zone1,.zone4{
+height: 20vw;
+width: 20vw;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+margin: 1vw;
+}
+.zone3,.zone2{
+    height: 50vw;
+    width: 70vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5vw;
+    border-radius: 2vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+/* background-image */
+.color{
+    background-image: url(image/background5.jpg);
+}
+.color1{background-image: url(image/barchart.png);}
+.color2{background-image: url(image/veilletechno1.png);}
+.color3{background-image: url(image/veilletechno2.png);}
+.color4{background-image: url(image/cup.png);}
+
+/* hover */
+#veille_1:hover ,#veille_2:hover{
+    box-shadow: -0.8vw -1vw 1vw #fc7e37;
+}
+
+/* boutons */
+.btnLire{
+    text-decoration: none;
+    text-shadow: #fc7e37;
+    color:#fc7e37;
+    font-size: 5vw;
+}

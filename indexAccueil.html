@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- style index.CSS -->
+    <link href="accueil.css" rel="stylesheet" />
+
+    <!-- Google font Lobster -- Confortaa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
+
+    <!-- font buton Go TOP  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <title>Mon Porfolio Yen Nhi HTM Page Accueil</title>
+
+</head>
+
+<body class="body">
+    <!--  header -->
+    <header class="header">
+        <div class="containerLogo"><img src="image/logoYENNHI.png" alt="logoYENNHI" class="logo"></div>
+        <div class="photoYN"><img src="image/photoYenNhi.png" alt="photoYenNhi" class="photo"></div>
+        <div class="nav" id="containerNav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-btn position-nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <a href="indexContact.html" id="btnContactIcon" class="nav-btn position-nav-btn-contactIcon"></a>
+
+            <div class="nav-links">
+                <a href="indexAccueil.html" class="btnOptions isDisabled">Accueil</a>
+                <a href="indexCV.html" class="btnOptions">CV</a>
+                <a href="indexRealisations.html" class="btnOptions">Réalisations</a>
+                <a href="indexPublications.html" class="btnOptions">Publications</a>
+                <a href="indexContact.html" class="btnOptions">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!--  main -->
+    <main class="main">
+        <!-- Section 1-->
+        <div class="slideExperiences">
+            <!-- roadmap -->
+            <section id="timeline">
+                <div class="tl-item">
+
+                    <div class="tl-bg" style="background-image: url(image/Cadastre.jpg)"></div>
+
+                    <div class="tl-year">
+                        <p class="f2 heading--sanSerif">2013</p>
+                    </div>
+
+                    <div class="tl-content">
+                        <h1>Ingénieur géomatique</h1>
+                        <p>Centre de Géomatique</p>
+                    </div>
+
+                </div>
+
+                <div class="tl-item">
+
+                    <div class="tl-bg" style="background-image: url(image/Estimationimmobiliere.jpg)"></div>
+
+                    <div class="tl-year">
+                        <p class="f2 heading--sanSerif">2015</p>
+                    </div>
+
+                    <div class="tl-content">
+                        <h1 class="f3 text--accent ttu">Ingénieur informatique</h1>
+                        <p>Meridianlink Inc</p>
+                    </div>
+
+                </div>
+
+                <div class="tl-item">
+
+                    <div class="tl-bg" style="background-image: url(image/SAR.png)"></div>
+
+                    <div class="tl-year">
+                        <p class="f2 heading--sanSerif">2018</p>
+                    </div>
+
+                    <div class="tl-content">
+                        <h1 class="f3 text--accent ttu">Assistante chef de projet</h1>
+                        <p>IRSTEA INRAE</p>
+                    </div>
+
+                </div>
+
+                <div class="tl-item">
+
+                    <div class="tl-bg" style="background-image: url(image/biomass2.jpg)"></div>
+
+                    <div class="tl-year">
+                        <p class="f2 heading--sanSerif">2019</p>
+                    </div>
+
+                    <div class="tl-content">
+                        <h1 class="f3 text--accent ttu">Ingénieur géomatique</h1>
+                        <p>IRSTEA INRAE</p>
+                    </div>
+                </div>
+            </section>
+            <!-- roadmap END -->
+        </div>
+        <!-- Section 2 -->
+        <div class="sectionCompetences sectionDisplayFlex">
+            <div id="containerCompetences" class="containerSubSection">
+                <div id="contenu1" class="displayOff"></div>
+                <div id="contenu2">
+                    <img src="image/photoYenNhi.png" alt="photoYenNhi2" class="photo">
+                </div>
+                <div id="contenu3"></div>
+                <div id="containerBtnCompetences">
+                    <button class="btn-competence" id="btn-competence1"></button>
+                    <button class="btn-competence" id="btn-competence2"></button>
+                    <button class="btn-competence" id="btn-competence3"></button>
+                </div>
+            </div>
+            <div class="containerBtnSavoirPlus">
+                <a href="indexCV.html" class="btnSavoirPlus">Savoir plus</a>
+            </div>
+        </div>
+        <!-- section 3 -->
+
+        <div class="sectionRealisations sectionDisplayFlex">
+            <div id="containerRealisations" class="containerSubSection scene--card">
+                <div id="containerProduit1" class="card">
+                    <div class="card__face card__face--font">Projet MP3 Lecture</div>
+                    <div class="card__face card__face--back" id="produitMp3">
+                        <img src="image/lectureMP3.png" alt="lectureMP3" id="imgLectureMP3">
+                        <div class="descriptionProduit">
+                            Lecture MP3: jouer la musique,
+                            mettre la musique sur pause,arrêter la musique complètement,
+                            passer à la musique suivante/précédente ,
+                            régler le volume du son et
+                            afficher le titre de la chanson.
+                        </div>
+                    </div>
+                </div>
+                <div id="containerProduit2" class="card">
+                    <div class="card__face card__face--font">Projet StarTek</div>
+                    <div class="card__face card__face--back" id="produitStarTreck">
+                        <img src="image/Bootstrap.png" alt="bootstrap" id="imgBootstrap">
+                        <div class="descriptionProduit">
+                            En intégrant Bootstrap, proposez une amélioration de ce site :
+                            https://www.syti.net/StarTrek.html
+
+                        </div>
+                    </div>
+                </div>
+                <div id="containerProduit3" class="card">
+                    <div class="card__face card__face--font">Projet Couture</div>
+                    <div class="card__face card__face--back" id="produitCouture">
+                        <img src="image/couture.png" alt="couture" id="imgCouture">
+                        <div class="descriptionProduit">Réaliser un site pour un club couture, pour que les participants
+                            puissent montrer leur réalisation.</div>
+                    </div>
+                </div>
+                <div id="containerProduit4" class="card">
+                    <div class="card__face card__face--font">A venir</div>
+                    <div class="card__face card__face--back">
+                        <img src="image/light.png" alt="light" id="imgAvenir">
+                        <div class="descriptionProduit"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="containerBtnSavoirPlus">
+                <a href="indexRealisations.html" class="btnSavoirPlus">Savoir plus</a>
+            </div>
+        </div>
+        <!-- section 4 -->
+        <div class="sectionVeilles sectionDisplayFlex">
+            <div class="containerSubSection">
+                <div id="containerSub1">
+                    <a href="https://cda.needemand.com/2021/12/03/the-state-of-the-art-javascript-frameworks/"
+                        class="btnVeille position-btn-veille1"></a>
+                    <a href="https://cda.needemand.com/2021/10/30/the-initial-of-cascading-css-layer-css/"
+                        class="btnVeille position-btn-veille2"></a>
+                    <a href="https://cda.needemand.com/2021/12/03/the-state-of-the-art-javascript-frameworks/"
+                        class="btnVeille position-btn-veille3"></a>
+                </div>
+                <div id="containerSub2">
+                    <span></span>
+                    <span></span>
+                    <span>Veille techno</span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div id="containerSub3">
+                    <a href="https://cda.needemand.com/2021/12/03/the-state-of-the-art-javascript-frameworks/"
+                        class="btnVeille position-btn-veille4"></a>
+                    <a href="https://cda.needemand.com/2021/10/30/the-initial-of-cascading-css-layer-css/"
+                        class="btnVeille position-btn-veille5"></a>
+                </div>
+            </div>
+            <div class="containerBtnSavoirPlus">
+                <a href="indexPublications.html" class="btnSavoirPlus">Savoir plus</a>
+            </div>
+        </div>
+        <!-- section 5 -->
+        <div class="slideTous">
+            <div class="scene">
+                <div class="carousel">
+                    <div class="carousel__cell ">
+                        <div class="backgroundCarousel"id="carousel__cell1"></div>
+                    </div>
+                    <div class="carousel__cell">
+                        <div class="backgroundCarousel"id="carousel__cell2"></div>
+                    </div>
+                    <div class="carousel__cell">
+                        <div class="backgroundCarousel"id="carousel__cell3"></div>
+                    </div>
+                    <div class="carousel__cell">
+                        <div class="backgroundCarousel" id="carousel__cell4"></div>
+                    </div>
+                    <div class="carousel__cell">
+                        <div class="backgroundCarousel" id="carousel__cell5"></div>
+                    </div>
+                    <div class="carousel__cell">
+                        <div class="backgroundCarousel" id="carousel__cell6"></div>
+                    </div>
+                    <div class="carousel__cell">
+                        <div class="backgroundCarousel" id="carousel__cell7"></div>
+                    </div>
+                    <div class="carousel__cell">
+                        <div class="backgroundCarousel" id="carousel__cell8"></div>
+                    </div>
+                    <div class="carousel__cell">
+                        <div class="backgroundCarousel" id="carousel__cell9"></div>
+                    </div>
+                </div>
+            </div>
+            <p style="text-align: center;">
+                <button class="previous-button custom-btn btn-10"></button>
+                <button class="next-button custom-btn btn-10"></button>
+            </p>
+        </div>
+
+        <!-- Back to top button + JS+ CSS-->
+        <div onclick="topFunction()" id="myBtn" title="Go to top"></div>
+        <!-- Back to top button -->
+    </main>
+    <!--  footer -->
+    <footer class="footer displayFlex">
+        <div id="zone1">
+        </div>
+        <div id="zone2">
+            <div id="containerLinks">
+                <span class="fontSizeTitle">Links</span>
+                <a href="indexAccueil.html" class="links">Accueil</a>
+                <a href="indexCV.html" class="links">CV</a>
+                <a href="indexRealisations.html" class="links">Réalisations</a>
+                <a href="indexPublications.html" class="links">Publications</a>
+                <a href="indexContact.html" class="links">Contact</a>
+            </div>
+            <div id="containerMonSite"></div>
+        </div>
+        <div id="zone3">
+            <div id="logoFooter"><img src="image/logoYENNHI.png" alt="logoYENNHI" class="logoFooter"></div>
+            <div id="containerIconFooter"></div>
+        </div>
+    </footer>
+    <!--  footer -->
+
+    <script src="mainAccueil.js"></script>
+</body>
+
+</html>

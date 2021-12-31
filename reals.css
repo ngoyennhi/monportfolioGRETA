@@ -1,0 +1,187 @@
+
+/* background color */
+.color{
+    background-image: url(image/background3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.color1{
+    background-image: url(image/light.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.color2{
+    background-color: rgb(10, 37, 28);
+}
+.color3{
+    background-color: rgb(64, 145, 118);
+}
+.color4{
+    background-color: rgb(174, 248, 224);
+}
+.color5{
+    background-image: url(image/money.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* container contenu */
+#groupProduits{
+height: 85%;
+width: 100%;
+}
+
+.zone1,.zone5{
+height: 30vw;
+width: 30vw;
+}
+.zone2,.zone3,.zone4{
+    height: 65vw;
+    width: 44vw;
+    border-radius: 1vw;
+    padding:1vw;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    background-color: whitesmoke;
+}
+
+.scenePageReal{
+   position: relative;
+   height: 28vw; 
+   perspective: 1000px;
+    /* margin-top: 0 auto; */
+    margin-top:-20vw;
+}
+
+/* position transform translate */
+.position-image1{
+    transform: translateX(66vw) translateY(8vw);
+}
+.position-produit2{
+    transform: translateX(5vw)translateY(-17vw);
+}
+.position-produit3{
+    transform: translateX(53vw)translateY(-53vw);
+}
+.position-produit4{
+    transform: translateX(5vw)translateY(-69vw);
+}
+.position-image5{
+    transform: translateX(58vw)translateY(-95vw);
+}
+
+.cardPhoto
+{
+height: 50%;
+width: 100%;
+border-radius: 1vw;
+margin:1vw;
+}
+.cardPhoto-image
+{
+height: 100%;
+width: 100%;
+object-fit: contain;
+}
+.contenuText{
+    height: 30%;
+    width: 100%;
+    text-align: center;
+}
+
+/* bouton */
+.btn-7 {
+    background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
+      line-height: 42px;
+      padding: 0;
+      border: none;
+      height: fit-content;
+    }
+    .btn-7 span {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .btn-7:before,
+    .btn-7:after {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      background: rgba(251,75,2,1);
+      box-shadow:
+       -7px -7px 20px 0px rgba(255,255,255,.9),
+       -4px -4px 5px 0px rgba(255,255,255,.9),
+       7px 7px 20px 0px rgba(0,0,0,.2),
+       4px 4px 5px 0px rgba(0,0,0,.3);
+      transition: all 0.3s ease;
+    }
+    .btn-7:before{
+       height: 0%;
+       width: 2px;
+    }
+    .btn-7:after {
+      width: 0%;
+      height: 2px;
+    }
+    .btn-7:hover{
+      color: rgba(251,75,2,1);
+      background: transparent;
+    }
+    .btn-7:hover:before {
+      height: 100%;
+    }
+    .btn-7:hover:after {
+      width: 100%;
+    }
+    .btn-7 span:before,
+    .btn-7 span:after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      background: rgba(251,75,2,1);
+      box-shadow:
+       -7px -7px 20px 0px rgba(255,255,255,.9),
+       -4px -4px 5px 0px rgba(255,255,255,.9),
+       7px 7px 20px 0px rgba(0,0,0,.2),
+       4px 4px 5px 0px rgba(0,0,0,.3);
+      transition: all 0.3s ease;
+    }
+    .btn-7 span:before {
+      width: 2px;
+      height: 0%;
+    }
+    .btn-7 span:after {
+      height: 2px;
+      width: 0%;
+    }
+    .btn-7 span:hover:before {
+      height: 100%;
+    }
+    .btn-7 span:hover:after {
+      width: 100%;
+    }
+
+   a{
+        text-decoration: none;
+        font-size: 1.5vw;
+        text-align: center;
+    }
+
+/* responsive */ /* responsive */ /* responsive */
+
+@media (max-width: 576px) {
+    .position-image1,.position-produit2,.position-produit3,.position-produit4,.position-produit5{
+        transform: translateX(0) translateY(0);
+        margin: 2vw;
+    }
+
+   .footer,.main ,#groupProduits{
+        height: fit-content;
+    }
+
+    .footer{
+        margin-top: 5vw;
+    }
+}

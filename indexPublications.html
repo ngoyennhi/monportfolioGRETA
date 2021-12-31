@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS version 5.1.3-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- style index.CSS -->
+    <link href="accueil.css" rel="stylesheet" />
+    <link href="veille.css" rel="stylesheet" />
+
+    <!-- Google font Lobster -- Confortaa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap" rel="stylesheet">
+
+    <!-- font buton Go TOP  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <title>Mon Porfolio Yen Nhi HTM</title>
+
+</head>
+
+<body class="body">
+    <!--  header -->
+    <header class="header">
+        <div class="containerLogo"><img src="image/logoYENNHI.png" alt="logoYENNHI" class="logo"></div>
+        <div class="photoYN"><img src="image/photoYenNhi.png" alt="photoYenNhi" class="photo"></div>
+        <div class="nav" id="containerNav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-btn position-nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+
+            <a href="indexContact.html" id="btnContactIcon" class="nav-btn position-nav-btn-contactIcon"></a>
+
+            <div class="nav-links">
+                <a href="indexAccueil.html" class="btnOptions isDisabled">Accueil</a>
+                <a href="indexCV.html" class="btnOptions">CV</a>
+                <a href="indexRealisations.html" class="btnOptions">Réalisations</a>
+                <a href="indexPublications.html" class="btnOptions isDisabled">Publications</a>
+                <a href="indexContact.html" class="btnOptions">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!--  main -->
+    <main class="mainVeille color">
+        <div id="containerVeilles">
+            <div id="icon_image3" class="zone1 color1 ">
+            </div>
+            <div id="veille_1" class="zone2 color2 ">
+                <a href="https://cda.needemand.com/2021/10/30/the-initial-of-cascading-css-layer-css/" class="btnLire">Lire la suite</a>
+            </div>
+            <div id="veille_2" class="zone3 color3 ">
+                <a href="https://cda.needemand.com/2021/12/03/the-state-of-the-art-javascript-frameworks/"class="btnLire">Lire la suite</a>
+            </div>
+            <div id="icon_image4" class="zone4 color4 "></div>
+            <!-- Back to top button + JS+ CSS-->
+            <div onclick="topFunction()" id="myBtn" title="Go to top"></div>
+            <!-- Back to top button -->
+        </div>
+    </main>
+    <!--  footer -->
+    <footer class="footer displayFlex">
+        <div id="zone1">
+        </div>
+        <div id="zone2">
+            <div id="containerLinks">
+                <span class="fontSizeTitle">Links</span>
+                <a href="indexAccueil.html" class="links">Accueil</a>
+                <a href="indexCV.html" class="links">CV</a>
+                <a href="indexRealisations.html" class="links">Réalisations</a>
+                <a href="indexPublications.html" class="links">Publications</a>
+                <a href="indexContact.html" class="links">Contact</a>
+            </div>
+            <div id="containerMonSite"></div>
+        </div>
+        <div id="zone3">
+            <div id="logoFooter"><img src="image/logoYENNHI.png" alt="logoYENNHI" class="logoFooter"></div>
+            <div id="containerIconFooter"></div>
+        </div>
+    </footer>
+    <!--  footer -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="mainPubs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="mainAccueil.js"></script>
+</body>
+
+</html>
