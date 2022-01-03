@@ -90,11 +90,11 @@ object-fit: contain;
 
 /* bouton */
 .btn-7 {
-    background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
-      line-height: 42px;
+      background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
       padding: 0;
       border: none;
-      height: fit-content;
+      height: fit-content; 
+      width: fit-content;
     }
     .btn-7 span {
       position: relative;
@@ -163,18 +163,13 @@ object-fit: contain;
       width: 100%;
     }
 
-   a{
-        text-decoration: none;
-        font-size: 1.5vw;
-        text-align: center;
-    }
-
 /* responsive */ /* responsive */ /* responsive */
 
 @media (max-width: 576px) {
     .position-image1,.position-produit2,.position-produit3,.position-produit4,.position-produit5{
         transform: translateX(0) translateY(0);
-        margin: 2vw;
+        margin-top: 5vw;
+        margin-left: 5vw;
     }
 
    .footer,.main ,#groupProduits{
@@ -182,6 +177,7 @@ object-fit: contain;
     }
 
     .footer{
-        margin-top: 5vw;
+        margin-top: 5vw; 
+
     }
 }

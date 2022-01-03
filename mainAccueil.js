@@ -50,7 +50,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    mybutton.style.display = "inline-block";
+ mybutton.style.display = "inline-block";
   } else {
     mybutton.style.display = "none";
   }
