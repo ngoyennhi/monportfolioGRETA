@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
  btnCompetence1.addEventListener("click", function () {
   if (flag_toggle_black) {
     ecran.classList = "displayOn";
-    ecran.textContent = "Bonjour, je suis développeuse d'applications qui s'est passionnée pour le domaine informatique";
+    ecran.textContent = "Bonjour, je suis développeuse d'applications qui s'est passionnée pour le domaine informatique. Je suis toujours à l’affut des nouveautés en développement web, UI/UX.";
     ecranCache.classList="displayOff";
   } else {
     ecran.classList = "displayOff";
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
 btnCompetence2.addEventListener("click", function () {
   if (flag_toggle_black) {
     ecran.classList = "displayOn";
-    ecran.textContent = "Bonjour, je maîtrise les langages au développement web (PHP, SQL, JavaScrip,Java, HTML, CSS)";
+    ecran.textContent = "Bonjour, je maîtrise les langages au développement web. A côté des technologies que je connais bien. Je suis prêt à apprendre de nouveaux frameworks, les autres langages nécessaires selon de projets.";
     ecranCache.classList="displayOff";
   } else {
     ecran.classList = "displayOff";
@@ -106,7 +106,7 @@ btnCompetence2.addEventListener("click", function () {
 btnCompetence3.addEventListener("click", function () {
   if (flag_toggle_black) {
     ecran.classList = "displayOn";
-    ecran.textContent = "Salut, je suis au cœur d’une nouvelle aventure avec la possibilité de tout construire.";
+    ecran.textContent = "Salut, je suis des études en IT. Je sais être autonome et force de proposition. J'ai méthodique et aime travailler en équipe. Etre ouvert d'esprit est mon point fort.";
     ecranCache.classList="displayOff";
   } else {
     ecran.classList = "displayOff";

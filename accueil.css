@@ -60,10 +60,11 @@
 }
 
 .isDisabled {
-  color: currentColor;
+  color: #faf20d !important;
   cursor: not-allowed;
   opacity: 0.8;
   text-decoration: none;
+  box-shadow: -0.8vw -0.9vw 3vw #faf20d !important;
 }
 .nav > #nav-check {
   display: none;
@@ -108,7 +109,7 @@
 }
 
 .main {
-  height: 250vw;
+  height: fit-content;
   display: flex;
   flex-direction: column;
 }
@@ -121,7 +122,7 @@
 body {
   font-family: 'Source Code Pro', monospace;
   font-size: 3vw;
-  line-height: 1.75;
+  /* line-height: 1.75; */
 }
 
 #timeline {
@@ -254,6 +255,8 @@ body {
   background: white;
   box-shadow: #ffbb0b 0px 19px 38px, #fc7e37 0px 15px 12px;
   opacity: 0.4;
+  padding:2.5vw;
+  font-size: 2vw;
 }
 #contenu2 {
   height: 100%;
@@ -282,7 +285,23 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  animation: glow 1s infinite ; /* animation de buttons */
 }
+/* animation de buttons */
+@keyframes glow{
+  0%{
+  box-shadow: 5px 5px 20px rgb(93, 52, 168),-5px -5px 20px rgb(93, 52, 168);}
+  
+  50%{
+  box-shadow: 5px 5px 20px rgb(81, 224, 210),-5px -5px 20px rgb(81, 224, 210)
+  }
+  100%{
+  box-shadow: 5px 5px 20px rgb(93, 52, 168),-5px -5px 20px rgb(93, 52, 168)
+  }
+}
+
+
+
 
 /* btn position */
 #btn-competence1 {
@@ -315,7 +334,6 @@ body {
   width: 35%;
   margin: 1vw;
   border-radius: 1vw;
-  border: 0.5vw solid #fc7e37;
   text-align: center;
 }
 
@@ -324,7 +342,6 @@ body {
   width: 35%;
   margin: 1vw;
   border-radius: 1vw;
-  border: 0.5vw solid #fc7e37;
 }
 
 #containerProduit3 {
@@ -332,7 +349,6 @@ body {
   width: 25%;
   margin: 1vw;
   border-radius: 1vw;
-  border: 0.5vw solid #fc7e37;
 }
 
 #containerProduit4 {
@@ -340,7 +356,6 @@ body {
   width: 35%;
   margin: 1vw;
   border-radius: 1vw;
-  border: 0.5vw solid #fc7e37;
 }
 
 /* card flip  */
@@ -367,9 +382,10 @@ body {
   text-align: center;
   font-size: 4vw;
   backface-visibility: hidden;
-  color: #fc7e37;
-  background-color: #8ec5fc;
-  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  color: #171157;
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  box-shadow: -0.5vw -0.6vw 1vw #fc7e37;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -377,6 +393,8 @@ body {
 
 .card__face--front {
   background: red;
+  text-align: center;
+
 }
 
 .card__face--back {
@@ -400,6 +418,7 @@ body {
   font-family: 'Comfortaa';
   text-align: left;
   font-size: 1.5vw;
+  padding: 1vw;
 }
 
 /* Projet StarTek */
@@ -438,9 +457,10 @@ body {
 /* Section Realisations END */
 
 /* Section Veille Techno */
-.sectionVeilles {
-  background-image: url(image/background5.jpg);
-}
+/* background image de section  */
+/* .sectionVeilles {
+   background-image: url(image/background5.jpg); 
+} */
 
 #containerSub1 {
   width: 100%;
@@ -526,27 +546,47 @@ body {
   height: 12vw;
   width: 12vw;
   border-radius: 12vw;
-  border: 1vw solid #ffff00;
+  box-shadow: #00fffc 0px 10px 30px;
 }
 
 .btnVeille:hover {
-  box-shadow: #00fffc 0px 5px 15px;
+  box-shadow: #ffbb0b 0px 19px 38px, #fc7e37 0px 15px 12px;
 }
 
 .position-btn-veille1 {
   transform: translateX(63vw) translateY(2vw);
+  background-image: url(image/logojv.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; 
 }
 .position-btn-veille2 {
   transform: translateX(71vw) translateY(7vw);
+  background-image: url(image/logocss.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; 
 }
 .position-btn-veille3 {
   transform: translateX(-20vw) translateY(36vw);
+  background-image: url(image/logojs.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; 
 }
 .position-btn-veille4 {
   transform: translateX(29vw) translateY(5vw);
+  background-image: url(image/logojs.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; 
 }
 .position-btn-veille5 {
   transform: translateX(38vw) translateY(5vw);
+  background-image: url(image/logocss.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain; 
 }
 /* Section Veille Techno END */
 
@@ -870,6 +910,15 @@ body {
 .links:hover {
   color: #fc7e37;
 }
+
+.copyright {
+  font: 200 2vw 'Oswald', sans-serif;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* end footer */
 
 .containerBtnSavoirPlus {
   height: 20%;

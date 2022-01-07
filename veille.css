@@ -32,17 +32,34 @@ margin: 1vw;
     border-radius: 2vw;
     text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items:flex-end;
+    padding: 2vw;
 }
 
+.imageVielle {
+    height: 100%;
+    width: 100%;
+    border-radius: 2vw;
+    margin-bottom: 1vw;
+}
 /* background-image */
 .color{
     background-image: url(image/background5.jpg);
 }
 .color1{background-image: url(image/barchart.png);}
-.color2{background-image: url(image/veilletechno1.png);}
-.color3{background-image: url(image/veilletechno2.png);}
+.color2{
+    background-image: url(image/veilletechno1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.color3{
+    background-image: url(image/veilletechno2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;}
 .color4{background-image: url(image/cup.png);}
 
 /* hover */
@@ -51,9 +68,40 @@ margin: 1vw;
 }
 
 /* boutons */
-.btnLire{
+.btnLire {
+    border: none;
+    background: linear-gradient(
+        0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
+      color:#fcfbfa;
+      overflow: hidden;
+      text-decoration: none;
+      font-size: 5vw;
+      border-radius: 1vw;
+      font-size: 3vw;
+      padding: 1vw;
+  }
+
+  .btnLire:before {
+      position: absolute;
+      content: '';
+      display: inline-block;
+      top: -180px;
+      left: 0;
+      width: 30px;
+      height: 100%;
+      background-color: #fff;
+  }
+  .btnLire:hover{
+    opacity: .7;
     text-decoration: none;
-    text-shadow: #fc7e37;
-    color:#fc7e37;
-    font-size: 5vw;
-}
+    color: rgb(247, 238, 1);
+  }
+  .btnLire:active{
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.2),
+      inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+  }
+  
+  
+  

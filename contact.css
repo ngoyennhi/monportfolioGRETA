@@ -25,15 +25,12 @@
   
   
   /* Begin Right Contact Page */
-  .direct-contact-container {
-    max-width: 400px;
-  }
   
   /* Location, Phone, Email Section */
   .contact-list {
     list-style-type: none;
-    margin-left: -30px;
-    padding-right: 20px;
+    /* margin-left: -30px; */
+    /* padding-right: 20px; */
   }
   
   .list-item {
@@ -42,7 +39,7 @@
   }
   
   .contact-text {
-    font: 300 5vw 'Confortaa', monospace;
+    font: 300 3vw 'Confortaa', monospace;
     letter-spacing: 1.9px;
     color: #FFFF00;
   }
@@ -66,15 +63,8 @@
   }
   
   .contact-text a:hover {
-    color: #FFFF00;
+    color: #ff8800;
     text-decoration: none;
-  }
-  
-  .copyright {
-    font: 200 3vw 'Oswald', sans-serif;
-    color: #555;
-    letter-spacing: 1px;
-    text-align: center;
   }
   
   hr {
