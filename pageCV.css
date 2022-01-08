@@ -86,7 +86,7 @@ h4 {
   font-weight: 400;
 }
 h6 {
-  font-size: 1.5vw !important;
+  font-size: 2vw ;
 }
 
 blockquote {
@@ -462,9 +462,16 @@ li {
     overflow-wrap: break-word;
   }
 
+  .h6{
+      font-size: 5.5vw !important;
+  }
   p {
 		font-size: 4vw;
 	  }
+
+    .purple {
+      font-size: 4vw !important;
+  }
   /* changer position de menu caché */
 .position-nav-page {
   margin-top: -15vw !important; 
